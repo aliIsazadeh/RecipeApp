@@ -11,6 +11,7 @@ roomVersion = "2.6.0"
 timberVersion = "5.0.1"
 junitVersion = "4.13.2"
 
+
 compose-bom = "2023.10.01"
 composeViewmodelLifecycle = "2.6.2"
 composeNavigation = "2.7.5"
@@ -26,6 +27,8 @@ androidxTestEspresso = "3.5.1"
 junitJupiter = "5.9.3"
 mockWebserver = "4.11.0"
 
+materialVersion = "1.2.0-beta01"
+
 
 [libraries]
 tools-buildGradle = { module = "com.android.tools.build:gradle", version.ref = "toolsBuildGradle" }
@@ -37,7 +40,7 @@ hilt-pluginGradle = { module = "com.google.dagger:hilt-android-gradle-plugin", v
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "composeVersion" }
 compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
-compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "materialVersion"}
 compose-viewmodel-lifecycle = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "composeViewmodelLifecycle" }
 compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 compose-activity = { module = "androidx.activity:activity-compose", version.ref = "composeActivity" }
